@@ -9,6 +9,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 1
       },
       {
@@ -20,6 +21,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 2
       },
       {
@@ -31,6 +33,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 3
       },
       {
@@ -42,6 +45,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 4
       },
       {
@@ -53,6 +57,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 4
       },
       {
@@ -64,6 +69,7 @@
         "brand": "Organic",
         "seasonal": "Winter Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 5
       },
       {
@@ -75,6 +81,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 6
       },
       {
@@ -86,6 +93,7 @@
         "brand": "Organic",
         "seasonal": "Winter Fruits",
         "country": "India",
+        "quantity":0,
         "id": 7
       },
       {
@@ -97,6 +105,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Winter Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 8
       },
       {
@@ -108,6 +117,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 9
       },
       {
@@ -119,6 +129,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 10
       },
       {
@@ -130,6 +141,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 11
       },
       {
@@ -141,6 +153,8 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
+        "quantity":0,
         "id": 12
       },
       {
@@ -152,6 +166,8 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
+        "quantity":0,
         "id": 13
       },
       {
@@ -163,6 +179,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 14
       },
       {
@@ -174,6 +191,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 15
       },
       {
@@ -185,6 +203,7 @@
         "brand": "Organic",
         "seasonal": "Winter Fruits",
         "country": "India",
+        "quantity":0,
         "id": 16
       },
       {
@@ -196,6 +215,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 17
       },
       {
@@ -207,6 +227,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 18
       },
       {
@@ -218,6 +239,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 19
       },
       {
@@ -229,6 +251,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 20
       },
       {
@@ -240,6 +263,7 @@
         "brand": "Organic",
         "seasonal": "Winter Fruits",
         "country": "China",
+        "quantity":0,
         "id": 21
       },
       {
@@ -251,6 +275,7 @@
         "brand": "Fresho",
         "seasonal": "Winter Fruits",
         "country": "India",
+        "quantity":0,
         "id": 22
       },
       {
@@ -262,6 +287,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 23
       },
       {
@@ -273,6 +299,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 24
       },
       {
@@ -284,6 +311,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 25
       },
       {
@@ -295,6 +323,7 @@
         "brand": "Hoovu Fresh",
         "seasonal": "Winter Fruits",
         "country": "China",
+        "quantity":0,
         "id": 26
       },
       {
@@ -306,6 +335,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 27
       },
       {
@@ -317,6 +347,7 @@
         "brand": "Fresho",
         "seasonal": "Winter Fruits",
         "country": "China",
+        "quantity":0,
         "id": 28
       },
       {
@@ -328,6 +359,7 @@
         "brand": "Organic",
         "seasonal": "Winter Fruits",
         "country": "India",
+        "quantity":0,
         "id": 29
       },
       {
@@ -339,6 +371,7 @@
         "brand": "Organic",
         "seasonal": "Summer Fruits",
         "country": "India",
+        "quantity":0,
         "id": 30
       },
       {
@@ -350,6 +383,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "China",
+        "quantity":0,
         "id": 31
       },
       {
@@ -361,6 +395,7 @@
         "brand": "Fresho",
         "seasonal": "Summer Fruits",
         "country": "Australia",
+        "quantity":0,
         "id": 32
       },
       {
@@ -372,6 +407,7 @@
         "brand": "Fresho",
         "seasonal": "Winter Fruits",
         "country": "India",
+        "quantity":0,
         "id": 33
       }
     ],
@@ -389,6 +425,41 @@
         "email": "rahul@gmail.com",
         "password": "12345",
         "id": 2
+      }
+    ],
+    "admin":[
+      {
+        "email":"admin@123",
+        "password":12345
+
+      }
+     
+    ],
+    "supplements":[
+      {
+        "image": "https://www.bigbasket.com/media/uploads/p/s/40019371_27-bournvita-chocolate-health-drink-bournvita.jpg",
+        "title": "Born Vita",
+        "price": "299",
+        "category": "Beverages",
+        "description": "Purchase more than 5kg to get a discount of 5%.",
+        "brand": "Bron Vita",
+        "country": "India",
+        "quantity":0,
+        "id": 1
+      }
+
+    ],
+    "household":[
+      {
+        "image": "https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/6cf6d3c9-a568-4a3c-8ec2-6476ddcebad1/041af9db-5f22-4e5a-8da6-f9d5b5c3ec73/hp_cleaners-disfec_cleaningStorefront_m_480_250123_01.jpg",
+        "title": "Disinfectant Toilet Cleaner Liquid, Original",
+        "price": "99",
+        "category": "Cleaners & Disinfectants",
+        "description": "Purchase more than 5kg to get a discount of 5%.",
+        "brand": "Harpic",
+        "country": "India",
+        "quantity":0,
+        "id": 1
       }
     ]
   }
