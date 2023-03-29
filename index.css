@@ -1,0 +1,31 @@
+#A_Main_Id {
+    width: 80%;
+    align-content: center;
+    padding-left: 12%;
+}
+
+#A_Bottom_Flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#A_Bottom_Flex > div{
+    width: 100%;
+}
+.A_bottom_Table{
+    display: flex;
+    justify-content: space-between;
+}
+.A_bottom_Table > h5{
+    width: 20%;
+}
+.A_bottom_Table > p{
+    width: 80%;
+}
+.A_bottom_Table > img{
+    width: 100%;
+  margin-right: 20%;
+}
+#A_Bottom_Heading{
+    font-size: 20%;
+}
