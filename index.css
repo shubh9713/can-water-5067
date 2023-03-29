@@ -1,3 +1,282 @@
+
+body{
+    background-color: #f7f1ff;
+ }
+ .loginSignup{
+display: flex;
+flex-direction: row-reverse;
+font-size: 20px;
+}
+
+.loginSignup > div{
+    margin: 10px;
+}
+
+.loginSignup > div > a:hover
+{
+    background-color: rgb(229, 226, 226); 
+}
+
+.loginSignup > div > a{
+    text-decoration: none;
+}
+
+.groceryLogo{
+    width: 10%;
+    /* border: 2px solid red; */
+}
+
+.groceryLogo:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.groceryLogo > a {
+    /* width: 30%; */
+    /* /* border: 2px solid black; */
+    padding: 0px;
+    margin: 0px;
+}
+ .groceryLogo > a > img{
+    width: 100%;
+    /* border: 2px solid blue; */
+    margin: 0px;
+    border-radius: 5px;
+} 
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+}
+
+#navbar> div{
+    /* border: 2px solid red; */
+}
+
+#navbar > .groceryLogo + div{
+    width: 40%;
+}
+
+#navbar > .groceryLogo + div > input{
+    width: 75%;
+    height: 35px;
+}
+
+#navbar > .groceryLogo + div > input + button{
+  height: 28px;
+  font-size: 15px;
+  /* padding: 10px; */
+}
+
+#cartLogo{
+    /* border: 2px solid blue; */
+    font-size: 40px;
+    color: black;
+} 
+
+#cartLogo:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+#mainParentDiv{
+    /* border: 2px solid rgb(22, 209, 197); */
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Style the navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: #bea2ed;
+  }
+   */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+
+#slideShow > img{
+    /* border: 2px solid green; */
+    width: 100%;
+}
+
+.BeautyAndHygieneMainSection{
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.BeautyAndHygieneHeading2{
+    color: rgb(68, 68, 68);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+#BeautyandHugieneItemsMainSections{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    /* border: ; */
+    /* border: 2px solid red; */
+}
+
+#BeautyandHugieneItemsMainSections >div{
+    /* border: 2px solid blue; */
+    border: 2px solid rgb(202, 205, 201);
+}
+
+.BeautyandHugieneItemsMainSections{
+    display: flex;
+    margin-bottom: 20px;
+
+    /* border: 2px solid rgb(239, 37, 219); */
+
+}
+
+#BeautyandHugieneItemsMainSections > div:hover{
+    /* border: 1px solid rgb(193, 191, 191); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.BeautyandHugieneItemsMainSections > div:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+#BeautyandHugieneItemsMainSections > div > img{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+#more{
+    border: 2px solid rgb(202, 205, 201);
+    display: none;
+    
+}
+
+#spanButton{
+    /* display: none */
+    /* margin: auto; */
+}
+#more > div:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.BeautyandHugieneItemsMainSections > div > img{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+#more > div > img{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+#more > div > a > img{
+    width: 100%
+}
+#BeautyandHugieneItemsMainSections > div > a > img{
+    width: 100%
+}
+.BeautyandHugieneItemsMainSections > div > a > img{
+    border: 2px solid rgb(202, 205, 201);
+    width: 100%
+}
+
+.items{
+    margin-left: 10px;
+}
+
+
+.wellnessImage > img{
+    /* border: 2px solid orange; */
+    width: 100%;
+}
+
+/* .invisible{
+    display: block;
+} */
+
+.imageParaContent >h2 ~ p, li{
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-align: justify;
+
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .invisible{
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 767px){
+    .invisible2{
+        display: none;
+    }
+
+}
+
+=======
 #A_Main_Id {
     width: 80%;
     align-content: center;
@@ -110,3 +389,4 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
+
