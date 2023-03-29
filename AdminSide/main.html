@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>add product</h1>
+        <input type="text" placeholder="title" id="title">
+        <input type="text" placeholder="price" id="price">
+        <input type="text" placeholder="description" id="description">
+        <button onclick="addProduct()">add product</button>
+    </div>
+    <br>
+    <div>
+        <input type="text" placeholder="id" id="update-id">
+        <input type="text" placeholder="title" id="update-title">
+        <input type="text" placeholder="price" id="update-price">
+        <input type="text" placeholder="description" id="update-description">
+        <button onclick="updateData()">update data</button>
+    </div>
+    <br>
+    <div>
+        <input type="text" placeholder="id" id="replace_id">
+        <input type="text" placeholder="title" id="replace_title">
+        <input type="text" placeholder="price" id="replace_price">
+        <button onclick="replace()"> replace data</button>
+    </div>
+    <div>
+        <table>
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>price</th>
+                <th>description</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+        </table>
+    </div>
+    <div id="pagination"></div>
+</body>
+</html>
+<script src="./scripts/main.js"></script>

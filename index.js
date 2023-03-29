@@ -1,3 +1,4 @@
+// Aviraj
 let A_Read_more_Btn = document.getElementById("A_Read_more");
 
 let A_Button_Read_More_Info = document.getElementById("A_Button_Read_More_Info");
@@ -17,3 +18,21 @@ function DisplayMoreInfo()
 
     A_Button_Read_More_Info.append(Header,para);
 }
+
+
+// Himanshu
+window.onscroll = function () {
+  myFunction();
+};
+
+var navbar = document.getElementById("h-navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
