@@ -1,0 +1,80 @@
+.h-topnavbar {
+  /* border: 2px solid; */
+  /* margin: auto;
+            width: 80%; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h-topnavbar a {
+  /* border: 2px solid; */
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.h-topnavbar a p img {
+  width: 30px;
+}
+
+#h-navbar {
+  background-color: white;
+  margin: auto;
+  /* margin-top: 10px; */
+  /* width: 80%; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-count-ele {
+  /* padding: 5px; */
+  /* border: 2px solid black; */
+  background-color: aliceblue;
+  display: flex;
+}
+
+.h-count-ele img {
+  width: 40px;
+}
+
+.sticky {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Bottom Navbar */
+
+/* Container Element - 1  */
+#h-container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.h-someadd {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.h-someadd img {
+  width: 100%;
+}
+
+/* Container Here */
+#h-container1 img {
+  width: 100%;
+}
+
+#h-container1 div:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
