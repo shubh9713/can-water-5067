@@ -7,6 +7,7 @@ body{
 display: flex;
 flex-direction: row-reverse;
 font-size: 20px;
+background-color: green;
 }
 
 .loginSignup > div{
@@ -28,10 +29,11 @@ body {
   
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: green;
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
+   
   }
   
   
@@ -46,7 +48,7 @@ body {
   }
   
   .lo{
-      border: 2px solid red;
+      /* border: 2px solid red; */
       width: 21%;
       /* padding: 0px; */
   }
@@ -87,7 +89,7 @@ body {
   } */
   
   .navbar .lo:hover{
-    background-color: rgb(215, 199, 19);
+    background-color: rgb(5, 236, 13);
   }
   
   .dropdown-content {
@@ -362,10 +364,7 @@ body {
     
 }
 
-#spanButton{
-    /* display: none */
-    /* margin: auto; */
-}
+
 #more > div:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     -ms-transform: scale(1.1); /* IE 9 */
@@ -470,5 +469,9 @@ body {
 }
 
   
-  
+#slideShowoffer{
+  color: rgb(195, 186, 11);
+  font-size: 25px;
+  padding-right: 200px;
+}
   

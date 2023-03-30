@@ -70,3 +70,24 @@ function slideShow()
 
     }, 2000);
 }
+
+//offer slideshow
+
+
+
+let offer123= ["MIN. 24% OFF on Fruits","MIN.30% OFF on Vegetables", "10% OfF on Dairy Products","20% OFF on non-veg items","500/- OFF on Min 2000/- shopping"];
+    let nu=0
+   
+    
+function slid(){
+    if(nu==5){
+        nu=0
+    }
+    let slideShowoffer=document.getElementById("slideShowoffer")
+for(let i=0;i<1;i++){
+    slideShowoffer.innerText=offer123[nu]
+    nu++   
+   
+}
+}
+setInterval(slid, 1000);
