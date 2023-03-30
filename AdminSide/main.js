@@ -1,157 +1,114 @@
+let brand=document.getElementById("brand");
+let image=document.getElementById("image");
+let title=document.getElementById("title");
+let price=document.getElementById("price");
+let addatabutton=document.getElementById("addProducts");
+let tbody=document.querySelector("tbody");
 
-let apiUrl = "http://localhost:3000/grocery";
+async function fetchdata(){
 
-let appending = document.getElementById("data");
-let pagination = document.getElementById("pagination");
-
-//appending the data to dom.
-//1. GET
-async function renderTable(pageNumber) {
-    try {
+    let res=await fetch("http://localhost:3000/supplements")
+    let data=await res.json()
+    console.log(data)
+    data.forEach(e => {
         
-        let response = await fetch(`${apiUrl}/posts?_limit=5&_page=${pageNumber}`);
-        let totalPosts = response.headers.get("X-Total-Count");
-        let totalButton = Math.ceil(totalPosts / 5)
-        // console.log(totalButton);
-        // console.log(totalPosts);
-        pagination.innerHTML = null
-        appending.innerHTML = null;
-        for (let i = 1; i <= totalButton; i++){
-            pagination.append(domButton(i));
-        }
-        let data = await response.json();
-     
-        // console.log(data);
-        data.forEach((e) => {
-            let tr = document.createElement("tr");
-            let title = document.createElement("td");
-            let price = document.createElement("td");
-            let des = document.createElement("td");
-            let button = document.createElement("button");
-            button.innerText = "delete"
-            button.addEventListener("click", () => {
-                // console.log(e.id)
-                deleteProduct(e.id);
-            })
-            title.innerText = e.title
-            price.innerText = e.price;
-            des.innerText = e.description;
-            tr.append(title, price, des, button);
-            // console.log(tr) 
-            appending.append(tr);
-        })
-    }
-    catch (e) {
-        console.log(e)
-    }
+       tbody.append( append(e.brand,e.price,e.image,e.title,e.id))
+    });
 }
+fetchdata()
 
-function domButton(i) {
-    let button = document.createElement("button");
-    button.setAttribute("data-id", i);
-    button.innerText = i;
-    button.addEventListener("click", (e) => {
-        // console.log(e);
-        // console.log(e.target.dataset.id);
-        renderTable(e.target.dataset.id);
-    })
-    return button;
-}
-
-renderTable(1);
-// 2. POST
-
-async function addProduct() {
-    try {
-         let data = {
-           title: document.getElementById("title").value,
-           price: document.getElementById("price").value,
-           description: document.getElementById("description").value,
-         };
-    //  console.log(data); we are getting;
-        let response = await fetch(`${apiUrl}/posts`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-        let d = await response.json();
-        console.log(d);
-    }
-    catch (e) {
-        console.log(e);
-    }
-}
-
-//PATCH- to update the data;
-
-async function updateData() {
-    try {
-        let update_data = {
-            title: document.getElementById("update-title").value,
-            price: document.getElementById("update-price").value,
-            description: document.getElementById("update-description").value
-        }
-        // console.log(update_data);
-        let id = document.getElementById("update-id").value;
-
-        let response = await fetch(`${apiUrl}/posts/${id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(update_data)
-
-        })
-        let d = await response.json();
-        console.log(d);
-    }
-    catch (e) {
-        console.log(e);
-    }
-}
-
-//DELETE- to delete entire data
-
-async function deleteProduct(id) {
-    try {
-        let response = await fetch(`${apiUrl}/posts/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        })
-        let d = await response.json();
-        console.log(d);
-    }
-    catch (e) {
-        console.log(e);
-    }
-}
-
-//PUT--- replaces entire data
-
-async function replace() {
-    try {
-        let replace = {
-            name: document.getElementById("replace_title").value,
-            price: document.getElementById("replace_price").value
+addatabutton.addEventListener("click",()=>{
     
-        };
-        // console.log(replace);
-        let id = document.getElementById("replace_id").value;
-        let response = await fetch(`${apiUrl}/posts/${id}`, {
-            method: "PUT",
-            body: JSON.stringify(replace),
-            headers: {
-                "Content-Type": "application/json",
-            }
-        })
-        let d = await response.json();
-        console.log(d)
+    let data={
+        brand:brand.value,
+        image:image.value,
+        title:title.value,
+        price:price.value,
+
     }
-    catch (e) {
-        console.log(e);
-    }
+    addata(data)
+})
+
+async function addata(x){
+
+    let res=await fetch("http://localhost:3000/supplements",{
+        method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(x)
+    })
+    let data=await res.json()
+    console.log(data)
 }
+
+
+function append(brand,price,img,title,id){
+
+    let tr=document.createElement("tr");
+    tr.setAttribute("data-id",id)
+    let brand1=document.createElement("td");
+    let price1=document.createElement("td");
+    let title1=document.createElement("td");
+    let image1=document.createElement("img");
+    image1.className="image";
+    brand1.innerText=brand;
+    price1.innerText=price;
+    title1.innerText=title;
+    image1.src=img;
+    // let edit=document.createElement("button")
+    let remove=document.createElement("button")
+    remove.innerText="❌";
+    // edit.innerText="✏️";
+    
+   
+//     edit.addEventListener("click",()=>{
+        
+//       name1.contentEditable=true;
+      
+      
+//       let data={
+//         name:name.innerText,
+//         image:image.innerText,
+//         title:title.innerText,
+//         price:price.innerText,
+
+//     }
+//    console.log(data)
+//     //    edit1(id,data);
+        
+//     }) 
+   
+    remove.addEventListener("click",()=>{
+        deleteitem(id)
+    })
+    tr.append(image1,brand1,price1,title1,remove)
+     return tr
+    
+}
+
+ function deleteitem(id){
+    fetch(`http://localhost:3000/supplements/${id}`,{
+        method:"DELETE",
+        headers:{ "Content-Type":"application/json"}
+    })
+}
+
+
+async function edit1(id,data1){
+   let res=await fetch(`http://localhost:3000/supplements/${id}`,{
+        method:"PATCH",
+        headers:{ "Content-Type":"application/json"},
+        body:JSON.stringify(data1)
+
+    })
+    let data=await res.json()
+    console.log(data)
+}
+
+
+
+
+
+
+///////////////////////////////////////////////////////////

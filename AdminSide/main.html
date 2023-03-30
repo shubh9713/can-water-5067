@@ -1,48 +1,194 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>admin page</title>
+    <style>
+        /* #addParent{
+            border: 3px solid  black;
+            height: 150px;
+            text-align: center;
+        }
+        #product{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 3px solid black;
+            height: 100px;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        #product > input{
+            text-align: center;
+            border-radius: 5px;
+            height: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border: none;
+        }
+        #data{
+            border: 3px solid black;
+            height: auto;
+            margin: auto;
+        }
+
+        #data table{
+            margin: auto;
+        }
+        
+        .image {
+            width: 100px;
+        }
+        table{
+            margin:auto;
+            text-align: center;
+            align-items: center;
+        } */
+
+
+
+        /* Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Add Product Form */
+#addParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+#product input[type="text"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-size: 16px;
+}
+
+#addProducts {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addProducts:hover {
+  background-color: #555;
+}
+
+/* Product List */
+#data {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.image {
+  width: 100px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #product {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #product {
+    width: 100%;
+  }
+}
+
+    </style>
 </head>
 <body>
-    <div><h1>add product</h1>
-        <input type="text" placeholder="title" id="title">
-        <input type="text" placeholder="price" id="price">
-        <input type="text" placeholder="description" id="description">
-        <button onclick="addProduct()">add product</button>
-    </div>
-    <br>
-    <div>
-        <input type="text" placeholder="id" id="update-id">
-        <input type="text" placeholder="title" id="update-title">
-        <input type="text" placeholder="price" id="update-price">
-        <input type="text" placeholder="description" id="update-description">
-        <button onclick="updateData()">update data</button>
-    </div>
-    <br>
-    <div>
-        <input type="text" placeholder="id" id="replace_id">
-        <input type="text" placeholder="title" id="replace_title">
-        <input type="text" placeholder="price" id="replace_price">
-        <button onclick="replace()"> replace data</button>
-    </div>
-    <div>
+      
+        <div id="addParent">
+          <div id="product" >
+            <input type="text" id="image" placeholder="enter image url">
+            <input type="text" id="brand" placeholder="enter product Brand">
+            <input type="text" id="title" placeholder="enter Title">
+            <input type="text" id="price" placeholder="enter price ">
+          </div>
+          <button id="addProducts">Add Product</button>
+        </div>
+       <div id="data">
         <table>
-        <thead>
             <tr>
-                <th>title</th>
-                <th>price</th>
-                <th>description</th>
-                <th>status</th>
+            <thead>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Title</th>
+                <th>Remove</th>
+              </thead>
             </tr>
-        </thead>
-        <tbody id="data"></tbody>
+            <tbody>
+                <!-- append the data here -->
+            </tbody>
         </table>
     </div>
-    <div id="pagination"></div>
+    
 </body>
 </html>
-<script src="./scripts/main.js"></script>
+<script src="main.js"></script>
