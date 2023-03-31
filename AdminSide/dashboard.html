@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="dashboared.css">
+    <style>
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .section img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="main.html">Products</a></li>
+                <li><a href="registeredUser.html">Users</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <div id="products">
+            <section class="section">
+                <h1>Total Users</h1>
+                <img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png" alt="Section 1 image">
+                <!-- <button>Check Details</button> -->
+                <a href="registeredUser.html">Check Details</a>
+            </section>
+            <section class="section">
+                <h1>Total Orders</h1>
+                <img src="https://cdn-icons-png.flaticon.com/512/5200/5200328.png" alt="Section 2 image">
+                <!-- <button>Check Details</button> -->
+                <a href="Ckeck Details">Total orders</a>
+            </section>
+            <section class="section">
+                <h1>Add Products</h1>
+                <img src="https://cdn3.iconfinder.com/data/icons/ecommerce-flat-style-2/512/e_-_Commerce_-_Flat_Style_2-05-512.png" alt="Section 3 image">
+                <a href="main.html"> ADD</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+<script src="dashboard.js"></script>

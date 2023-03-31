@@ -1,0 +1,128 @@
+/* Individual Product Page */
+
+#A_PageDiv {
+    width: 80%;
+    align-content: center;
+    padding-left: 12%;
+    margin-top: 10%;
+}
+#A_Path{
+    font-size: 60%;
+}
+#A_Category > a ,#A_Brands > a{
+    display: block;
+    text-decoration: none;
+    color: rgb(88, 75, 75);
+}
+#A_ProductPageDiv {
+    width: 100%;
+    display: flex;
+    background-color: rgb(226, 216, 216);
+}
+#A_Category{
+    margin-left: 10%;
+    padding-top: 2%;
+    width: 25%;
+}
+#A_imageOfProduct > img{
+    width: 150%;
+    padding-bottom: 20%;
+}
+#ProductInfo{
+    margin-left: 30%;
+    padding-top: 8%;
+    width: 100%;
+}
+#A_ProductRate {
+    display: grid;
+    grid-template-columns: repeat(2);
+}
+#A_ProductRate > div {
+
+    border:  1px solid rgb(88, 75, 75);
+    background-color: rgb(220, 230, 230);
+}
+.Select_Size{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Select_Size > div > img{
+    height: 100%;
+}
+#A_PackSize > div {
+
+    text-align: center;
+    align-items: center;
+}
+#A_Reating_Reviews{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+#A_Reating_Reviews div > img {
+    border: solid 1px brown;
+}
+#A_Know_More{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.A_Bournvita_Images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#A_Imageset{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 3%;
+}
+.A_Btn_design{
+    margin-left: 2%;
+    color: red;
+    background-color :aquamarine;
+}
+#A_Product_img{
+    width: 100%;
+    padding-top: 35%;
+}
+#A_shearOn{
+    margin-left: 85%;
+}
+
+#A_bottom{
+    background-color: rgb(137, 192, 137);
+}
+
+/* footer */
+
+#A_Main_Id {
+    width: 80%;
+    align-content: center;
+    padding-left: 12%;
+}
+
+#A_Bottom_Flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#A_Bottom_Flex > div{
+    width: 100%;
+}
+.A_bottom_Table{
+    display: flex;
+    justify-content: space-between;
+}
+.A_bottom_Table > h5{
+    width: 20%;
+}
+.A_bottom_Table > p{
+    width: 80%;
+}
+.A_bottom_Table > img{
+    width: 100%;
+  margin-right: 20%;
+}
