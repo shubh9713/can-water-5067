@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="product.css">
+
+</head>
+<style>
+
+#products>div{
+        width:95%;
+       
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 85px;
+          padding: 10px;
+
+ 
+    }
+    #products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width:70%;
+        margin-left: 25px;
+        column-gap: 5%
+    }
+    #dfilter{
+        display: flex;
+        width:95%;
+        /* border:1px solid red; */
+        margin:auto;
+    }
+    #dfil{
+        width:20%;
+       padding: 0px;
+        box-shadow: rgba(77, 75, 75, 0.24) 0px 3px 8px;
+    }
+    .offer{
+        margin:0px;
+        text-align: end;
+        box-shadow: rgba(77, 75, 75, 0.24) 0px 3px 8px;
+        color: red;
+        
+    }
+    .image{
+        width:100%
+    }
+    .fresho{
+        margin:0px;
+        font-size: 13px;
+        color:grey
+    }
+    .title{
+        margin:5px 0px 10px 0px
+    }
+    .mrp{
+        font-size: 16px;
+        margin :5px 0px 2px 0px;
+
+
+        
+    }
+    select{
+        width:100%;
+        justify-content: center;
+        border: 1px solid grey;
+        
+    }
+ 
+    .dmain2{
+     
+        background-color: rgba(238, 237, 237, 0.759);
+        border-radius: 5px;
+        height:100px;
+        margin:0px;
+        padding:0px
+    }
+    .car{
+        width:15%;
+       
+        margin: 0px;
+
+    }
+    .carimg{
+        width:100%
+    }
+    .delivery{
+        display: flex;
+        width:100%
+    }
+    .delivery1{
+        width:30%
+    }
+    .del{
+        font-size: 11px;
+        margin :2px 0px 0px 0px
+    }
+    .qinput{
+        width:30%;
+        border-radius: 10px;
+    }
+    .btn1{
+       
+        background-color: rgb(28, 205, 34);
+        border:none;
+        width:35%;
+        border-radius:10px;
+    }
+    .delivery3{
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        height:30px;
+        justify-content: space-between;      
+    }
+    .qty{
+        width:20%;
+        margin: 4px 0px 0px 0px
+    }
+
+    #cate h1{
+        font-size: 25px;
+        text-align: center;
+       
+        
+    }
+    #cate1 h3{
+        justify-content: space-around;
+        color:black;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+    #cate1 h3 a{
+        text-decoration: none;
+        color:black
+
+    }
+    #cate{
+        background-color:rgb(28, 205, 34);
+        height:45px;
+        margin-bottom:10px;
+       
+    
+    }
+   
+    </style>
+    <!-- <style src="product.css></style> -->
+
+    <body>
+   
+
+  
+  <div id ="dfilter">
+    <div id ="dfil"> 
+        <div id="cate"><h1 >Category</h1></div>
+        
+        <div id="cate1">
+            <h3 id="click1"><a href="" >Organic Fruits</a></h3>
+       
+            <h3 id="click2"><a href="">Organic Vegetables</a></h3>
+
+            <h3 id="click3"><a href="">Supplements</a></h3>
+
+            <h3 id="click4"><a href="">Foodgrains</a></h3>
+        </div>
+        <hr><hr>
+        <div id="cate"><h1 >Brand</h1></div>
+        
+        <div id="cate1">
+            <h3 id="click5"><a href="">Fresho</a></h3>
+       
+            <h3 id="click6"><a href="">Organic</a></h3>
+
+            <h3 id="click7"><a href="">Hoovu Fresh</a></h3>
+
+        </div>
+        <hr><hr>
+        <div id="cate"><h1 >Price</h1></div>
+        
+        <div id="cate1">
+            <h3 id="click8"><a href="">Low to High</a></h3>
+       
+            <h3 id="click9"><a href="">High to Low</a></h3>
+
+
+        </div>
+        <hr>
+    </div>
+    <div id="products"></div>
+</div>  
+</body>
+</html>
+<script src="product.js"></script>
+<script>
+
+
+// fruitsaddeventlistener
+    let category1=document.getElementById("click1")
+    category1.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Fruits"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+
+//vegetables addeventlistener
+
+
+let category2=document.getElementById("click2")
+    category2.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Vegetables"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+//supplements
+
+let category3=document.getElementById("click3")
+    category3.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Supplements"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+//foodgrains
+let category4=document.getElementById("click4")
+    category4.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Foodgrains"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+
+
+    //////Brands
+    //fresho
+    
+    let category5=document.getElementById("click5")
+    category5.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?brand=Fresho"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+//organic
+let category6=document.getElementById("click6")
+    category6.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?brand=Organic"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+//houvu fresh
+let category7=document.getElementById("click7")
+    category7.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?brand=Hoovu Fresh"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
+
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+        function display(data){
+            container.innerHTML=null
+            data.forEach((item) => {
+
+                let id=document.createElement("div")
+                id.setAttribute("id",item.id)
+
+                let main=document.createElement("div")
+                main.classList.add("dmain")
+                let main2=document.createElement("div")
+                main2.classList.add("dmain2")
+
+                let offer=document.createElement("h4")
+                offer.innerText="GET 24% OFF"
+                offer.classList.add("offer")
+
+                let image=document.createElement("img")
+                image.setAttribute("src",item.image)
+                image.classList.add("image")
+
+                let fresho=document.createElement("p")
+                fresho.innerText=item.brand
+                fresho.classList.add("fresho")
+
+                let title=document.createElement("h3")
+                title.innerText=item.title
+                title.classList.add("title")
+
+               
+
+                let select=document.createElement("select")
+                let option1=document.createElement("option")
+                option1.innerHTML=`500g-Rs${(Math.ceil(item.price.trim().split(" ").map(Number)[0]/2))}`
+                let option2=document.createElement("option")
+                option2.innerText=`1kg-Rs${item.price.trim().split(" ").map(Number)[0]}`
+                let option3=document.createElement("option")
+                option3.innerText=`2kg-Rs${item.price.trim().split(" ").map(Number)[0]*2}`
+                select.append(option1,option2,option3)
+                
+                let mrp=document.createElement("p")
+                mrp.innerHTML=`<b>Price-  ${item.price}<b>`
+                mrp.classList.add("mrp")
+               
+                let car=document.createElement("div")
+                car.classList.add("car")
+              
+
+                let delivery=document.createElement("div")
+                delivery.classList.add("delivery")
+
+
+                let delivery1=document.createElement("div")
+                delivery1.classList.add("delivery1")
+
+                let carimg=document.createElement("img")
+                carimg.classList.add("carimg")
+                carimg.src="images/car.png"
+
+                let delivery2=document.createElement("div")
+                delivery2.classList.add("delivery2")
+
+                let del=document.createElement("p")
+                del.innerText=`Standard Delivery 30Mar,9:00AM-1:30PM`
+                del.classList.add("del")
+                
+                let delivery3=document.createElement("div")
+                delivery3.classList.add("delivery3")
+
+                let qty=document.createElement("h3")
+                qty.innerText="Qty"  
+                qty.classList.add("qty")  
+                
+                let qinput=document.createElement("input")
+                qinput.setAttribute("type","number") 
+                qinput.classList.add("qinput")
+                let btn1=document.createElement("button")
+                btn1.classList.add("btn1")
+                btn1.innerText="ADD"
+
+                    delivery3.append(qty,qinput,btn1)
+                delivery2.append(del)
+                delivery1.append(carimg)
+                delivery.append(delivery1,delivery2,)
+                    
+                
+                
+                
+                
+                main.append(offer,image,fresho,title,select,main2)
+
+                main2.append(mrp,delivery,delivery3)
+                container.append(main)
+            });
+        }
+</script>
