@@ -460,6 +460,17 @@
         "country": "India",
         "quantity":0,
         "id": 1
+      },
+      {
+        "image": "https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/6cf6d3c9-a568-4a3c-8ec2-6476ddcebad1/041af9db-5f22-4e5a-8da6-f9d5b5c3ec73/hp_cleaners-disfec_cleaningStorefront_m_480_250123_01.jpg",
+        "title": "Disinfectant Toilet Cleaner Liquid, Original",
+        "price": "99",
+        "category": "Cleaners & Disinfectants",
+        "description": "Purchase more than 5kg to get a discount of 5%.",
+        "brand": "Harpic",
+        "country": "India",
+        "quantity":0,
+        "id": 1
       }
     ]
   }
