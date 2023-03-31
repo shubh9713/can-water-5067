@@ -17,9 +17,25 @@ function myFunction() {
 
 
 //Parmeshwar Murmu
-
+// profile">Contact</a>
+//             <a href="#" id="settings">Email</a>
+//             <a href="#" id="Logout"
 let groceryUrl = "http://localhost:3000/"
+let aboutUs = document.getElementById("aboutUs")
+let profile = document.getElementById("profile");
+let settings = document.getElementById("settings")
+let logout =  document.getElementById("Logout");
+let loginSignup = document.querySelector(".loginSignup");
+let userName = (localStorage.getItem("userName"))
+if(userName!=null)
+{
+    aboutUs.innerText = userName;
+    profile.innerText = "Profile";
+    settings.innerText = "Settings";
+    logout.innerText = "Logout";
+    loginSignup.style.display = "none";
 
+}
 let slide = document.getElementById("slideShow");
 let imageSlideShowSection = document.getElementById("imageSlideShowSection");
 // let btn = document.querySelector("button")
@@ -91,3 +107,11 @@ for(let i=0;i<1;i++){
 }
 }
 setInterval(slid, 1000);
+
+
+//Login Logout
+logout.addEventListener("click", function(){
+     localStorage.removeItem("userName");
+     loginSignup.style.display = "block";
+     window.location.href = "index.html";
+})
