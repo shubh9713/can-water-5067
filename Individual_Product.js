@@ -119,11 +119,16 @@ function Display(data)
 
     let Addto_Basket = document.createElement("button");
     Addto_Basket.classList.add("A_Btn_design")
+    Addto_Basket.setAttribute("id",`AddToBasket`);
     Addto_Basket.innerText = `ADD TO BASKET`
+    Addto_Basket.style = "color : black";
+
 
     let SaveBth = document.createElement("button");
-    SaveBth.classList.add("A_Btn_design")
+    SaveBth.classList.add("A_Btn_design");
+    SaveBth.setAttribute("id","SaveBtn");
     SaveBth.innerText = `Save`;
+    SaveBth.style = "color : orange";
 
     let DeliveryTime = document.createElement("p");
     DeliveryTime.innerHTML = `<img src="./Bornvita_images/DeliveryTimeIMG.png" alt="">Standard: Tomorrow 9:00AM - 1:30PM</p>`

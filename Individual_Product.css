@@ -17,7 +17,21 @@
 #A_ProductPageDiv {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    background-color: rgb(226, 216, 216);
+}
+#A_Category{
+    margin-left: 10%;
+    padding-top: 2%;
+    width: 25%;
+}
+#A_imageOfProduct > img{
+    width: 150%;
+    padding-bottom: 20%;
+}
+#ProductInfo{
+    margin-left: 30%;
+    padding-top: 8%;
+    width: 100%;
 }
 #A_ProductRate {
     display: grid;
@@ -67,11 +81,21 @@
 }
 .A_Btn_design{
     margin-left: 2%;
+    color: red;
+    background-color :aquamarine;
 }
 #A_Product_img{
     width: 100%;
     padding-top: 35%;
 }
+#A_shearOn{
+    margin-left: 85%;
+}
+
+#A_bottom{
+    background-color: rgb(137, 192, 137);
+}
+
 /* footer */
 
 #A_Main_Id {
