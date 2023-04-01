@@ -24,7 +24,7 @@ function DisplayMoreInfo() {
 // product Detailes
 let A_ProductNum = document.getElementById("A_ProductNum");
 
-let id = 1;
+let id = 9;
 
 featchAndRender(id);
 function featchAndRender(id) {
