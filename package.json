@@ -1,4 +1,22 @@
 {
+  "name": "can-water-5067",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubh9713/can-water-5067.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubh9713/can-water-5067/issues"
+  },
+  "homepage": "https://github.com/shubh9713/can-water-5067#readme",
   "dependencies": {
     "json-server": "^0.17.3"
   }
