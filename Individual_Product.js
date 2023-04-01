@@ -169,7 +169,6 @@ function Display(data)
         data.quantity = data.quantity + 1;
         A_ProductNum.innerText = data.quantity;
     })
-
 }
 
 
