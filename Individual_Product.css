@@ -4,7 +4,6 @@
     width: 80%;
     align-content: center;
     padding-left: 12%;
-    margin-top: 10%;
 }
 #A_Path{
     font-size: 60%;
@@ -82,16 +81,13 @@
 .A_Btn_design{
     margin-left: 2%;
     color: red;
-    background-color :aquamarine;
+    background-color :rgb(86, 167, 92);
+    border: none ;
 }
 #A_Product_img{
     width: 100%;
     padding-top: 35%;
 }
-#A_shearOn{
-    margin-left: 85%;
-}
-
 #A_bottom{
     background-color: rgb(137, 192, 137);
 }
@@ -99,9 +95,9 @@
 /* footer */
 
 #A_Main_Id {
-    width: 80%;
+    width: 100%;
     align-content: center;
-    padding-left: 12%;
+    text-align: justify;
 }
 
 #A_Bottom_Flex {
