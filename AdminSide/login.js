@@ -15,7 +15,7 @@ button.addEventListener("click",()=>{
         data.forEach(element => {
             if(element.email==email.value && element.password==pass.value){
                 alert("login succes")
-                location.replace("dashboard.html")
+                window.location.href = 'dashboard.html'
                 
             }
             else{
