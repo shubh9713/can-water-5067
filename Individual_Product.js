@@ -24,7 +24,7 @@ function DisplayMoreInfo() {
 // product Detailes
 let A_ProductNum = document.getElementById("A_ProductNum");
 
-let id = 10;
+let id = 1;
 
 featchAndRender(id);
 function featchAndRender(id) {
@@ -37,6 +37,9 @@ function featchAndRender(id) {
         Display(data);
     })
 }
+
+
+let Lsdata = JSON.parse(localStorage.getItem("BasketProducts")) || [];
 function Display(data) 
 {
     
@@ -123,6 +126,22 @@ function Display(data)
     Addto_Basket.innerText = `ADD TO BASKET`
     Addto_Basket.style = "color : black";
 
+
+    Addto_Basket.addEventListener("click",function(){
+        let c= 0;
+        for(let i=0;i<Lsdata.length;i++)
+        {
+            if(Lsdata[i] == data.id)
+            {
+                c++;
+            }
+        }
+        if(c == 0)
+        {
+            Lsdata.push(data.id);
+        }
+        localStorage.setItem("BasketProducts",JSON.stringify(Lsdata));
+    })
 
     let SaveBth = document.createElement("button");
     SaveBth.classList.add("A_Btn_design");
