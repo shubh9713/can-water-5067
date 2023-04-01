@@ -1,45 +1,9 @@
 {
   "grocery": [
     {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
-      "title": "onion(Loose)",
-      "price": "20 rs/kg",
-      "category": "Vegetables",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Fresho",
-      "seasonal": "Summer Fruits",
-      "country": "China",
-      "quantity": 0,
-      "id": 1
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/1221868_1-fresho-tender-coconut.jpg",
-      "title": "Tender Coconut",
-      "price": "35 rs/kg",
-      "category": "Fruits",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Organic",
-      "seasonal": "Summer Fruits",
-      "country": "Australia",
-      "quantity": 0,
-      "id": 2
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000159_26-fresho-potato.jpg",
-      "title": "Potato",
-      "price": "25 rs/kg",
-      "category": "Vegetables",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Hoovu Fresh",
-      "seasonal": "Summer Fruits",
-      "country": "India",
-      "quantity": 0,
-      "id": 3
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000200_17-fresho-tomato-hybrid.jpg",
+      "image": "https://www.bigbasket.com/media/uploads/p/s/40120006_5-fresho-pomegranate-small.jpg",
       "title": "Tomato-Hybrid",
-      "price": "20 rs/kg",
+      "price": "30",
       "category": "Vegetables",
       "description": "Purchase more than 5kg to get a discount of 5%.",
       "brand": "Fresho",
@@ -71,42 +35,6 @@
       "country": "Australia",
       "quantity": 0,
       "id": 5
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
-      "title": "Cauliflower",
-      "price": "15 rs/kg",
-      "category": "Vegetables",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Fresho",
-      "seasonal": "Summer Fruits",
-      "country": "China",
-      "quantity": 0,
-      "id": 6
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/40218332_1-fresho-grapes-green.jpg",
-      "title": "Grapes",
-      "price": "35 rs/kg",
-      "category": "Fruits",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Organic",
-      "seasonal": "Winter Fruits",
-      "country": "India",
-      "quantity": 0,
-      "id": 7
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
-      "title": "Green Peas",
-      "price": "23 rs/kg",
-      "category": "Vegetables",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Hoovu Fresh",
-      "seasonal": "Winter Fruits",
-      "country": "Australia",
-      "quantity": 0,
-      "id": 8
     },
     {
       "image": "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
@@ -395,18 +323,6 @@
       "country": "Australia",
       "quantity": 0,
       "id": 32
-    },
-    {
-      "image": "https://www.bigbasket.com/media/uploads/p/mm/10000592_10-fresho-sugarcane.jpg",
-      "title": "Sugar Cane",
-      "price": "36 rs/kg",
-      "category": "Fruits",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Fresho",
-      "seasonal": "Winter Fruits",
-      "country": "India",
-      "quantity": 0,
-      "id": 33
     }
   ],
   "register": [
@@ -423,12 +339,6 @@
       "email": "rahul@gmail.com",
       "password": "12345",
       "id": 2
-    },
-    {
-      "Name": "Don",
-      "email": "5@gmail.com",
-      "password": "mnbvcxz",
-      "id": 3
     }
   ],
   "admin": [
@@ -475,3 +385,4 @@
     }
   ]
 }
+
