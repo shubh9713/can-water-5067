@@ -6,43 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin page</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="">
     
 </head>
 <body>
       
-        <div id="addParent">
-          <div id="product" >
-            <input type="text" id="image" placeholder="enter image url">
-            <input type="text" id="brand" placeholder="enter product Brand">
-            <input type="text" id="title" placeholder="enter Title">
-            <input type="text" id="price" placeholder="enter price ">
-            <input type="text" id="category" placeholder="enter category ">
-            <input type="text" id="description" placeholder="description ">
-            <input type="text" id="country" placeholder="country ">
-          </div>
-          <button id="addProducts">Add Product</button>
-        </div>
-       <div id="data">
-        <table>
-            <tr>
-            <thead>
-                <th>Image</th>
-                <th>Brand</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Category</th>
-                <th>description</th>
-                <th>country</th>
-                <th>Actions</th>
-              </thead>
-            </tr>
-            <tbody>
-                <!-- append the data here -->
-            </tbody>
-        </table>
-    </div>
+       <div id="parent">
+        <input type="text" placeholder="Enter Image URL Here" id="img">
+        <input type="number" placeholder="Enter Price Here" id="price">
+        <input type="text" placeholder="Enter Category Here" id="category" >
+        <input type="text" placeholder="Enter Title Here" id="title">
+        <input type="text" placeholder="Enter Brand Here" id="brand">
+        <input type="text" placeholder="Enter Country Here" id="country">
+        
+        <button id="editbtn">Confirm Change</button>
+       </div>
+
+       <div id="output" >
+   
+       </div>
     
 </body>
 </html>
-<script src="main.js"></script>
+<script src="edit.js"></script>
