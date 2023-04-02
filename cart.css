@@ -32,21 +32,21 @@ td {
 /* #subtotal1{
   background-color: yellow;
 } */
-
-body {
-  background-color: #f3f3f3;
+#str {
+  /* background-color: #d51616; */
   width: 80%;
   margin: auto;
+  /* padding-left: 50px; */
 }
 .container {
-  background-color: white;
+  background-color: rgb(200, 33, 33);
   width: 90%;
   margin: auto;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   height: auto;
   margin-bottom: 200px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+} 
 .container > div > h3 {
   color: #84898e;
   font-family: "Roboto Slab", serif;

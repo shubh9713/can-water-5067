@@ -26,6 +26,9 @@ let profile = document.getElementById("profile");
 let settings = document.getElementById("settings")
 let logout =  document.getElementById("Logout");
 let loginSignup = document.querySelector(".loginSignup");
+
+let cartLogo = document.querySelector("#cartLogo");
+
 let userName = (localStorage.getItem("userName"))
 if(userName!=null)
 {
@@ -87,26 +90,40 @@ function slideShow()
     }, 2000);
 }
 
+// console.log(userName)
+cartLogo.addEventListener("click", function(){
+    if(userName!=null)
+    {
+        // window.location.href = "cart.html";
+        cartLogo.setAttribute("href", "cart.html")
+    }
+    else{
+        alert("To access You CART Please Login");
+        // window.location.href = "login.html";
+        cartLogo.setAttribute("href", "login.html")
+    }
+})
+
 //offer slideshow
 
 
 
-let offer123= ["MIN. 24% OFF on Fruits","MIN.30% OFF on Vegetables", "10% OfF on Dairy Products","20% OFF on non-veg items","500/- OFF on Min 2000/- shopping"];
-    let nu=0
+// let offer123= ["MIN. 24% OFF on Fruits","MIN.30% OFF on Vegetables", "10% OfF on Dairy Products","20% OFF on non-veg items","500/- OFF on Min 2000/- shopping"];
+//     let nu=0
    
     
-function slid(){
-    if(nu==5){
-        nu=0
-    }
-    let slideShowoffer=document.getElementById("slideShowoffer")
-for(let i=0;i<1;i++){
-    slideShowoffer.innerText=offer123[nu]
-    nu++   
+// function slid(){
+//     if(nu==5){
+//         nu=0
+//     }
+//     let slideShowoffer=document.getElementById("slideShowoffer")
+// for(let i=0;i<1;i++){
+//     slideShowoffer.innerText=offer123[nu]
+//     nu++   
    
-}
-}
-setInterval(slid, 1000);
+// }
+// }
+// setInterval(slid, 1000);
 
 
 //Login Logout
