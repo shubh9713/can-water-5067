@@ -6,11 +6,14 @@ let login= document.getElementById("login")
 let title=document.getElementById("title")
 
 
+
 //Parameshwar
 let name1 = document.getElementById("name");
+let lastname = document.getElementById("lastname");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let aboutUs2 = document.getElementById("aboutUs");
+
 
 login.onclick = function(){
     namefield.style.maxHeight="0";
@@ -37,6 +40,10 @@ function fetchDataFromRegister()
     {
         alert("Name Cannot be Empty");
     }
+    else if(lastname.value == "")
+    {
+        alert("LastName cannot be empty");
+    }
     else if(email.value == "")
     {
         alert("Email cannot be empty");
@@ -48,7 +55,8 @@ function fetchDataFromRegister()
     else{
 
     let obj = {
-        Name:name1.value,
+        firstName:name1.value,
+        lastName: lastname.value,
         email: email.value,
         password:password.value
 
@@ -109,7 +117,7 @@ function loginData(data)
         {
             alert("Login Successfull");
             window.location.href = "index.html";
-            localStorage.setItem("userName", (ele.Name));
+            localStorage.setItem("userName", (ele.firstName));
             flag = 1;
         }
     });

@@ -5,7 +5,9 @@
     font-family: 'poppins', sans-serif;
 }
 
-
+#namefield > input{
+ /* margin-bottom: 5px; */
+}
 .container{
     width:100vw;
     height:100vh;

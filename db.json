@@ -1,10 +1,45 @@
 {
-
   "grocery": [
     {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/40120006_5-fresho-pomegranate-small.jpg",
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+      "title": "onion(Loose)",
+      "price": "1 rs/kg",
+      "category": "Vegetables",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Fresho",
+      "seasonal": "Summer Fruits",
+      "country": "China",
+      "quantity": 0,
+      "id": 1
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/1221868_1-fresho-tender-coconut.jpg",
+      "title": "Tender Coconut",
+      "price": "35 rs/kg",
+      "category": "Fruits",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Organic",
+      "seasonal": "Summer Fruits",
+      "country": "Australia",
+      "quantity": 0,
+      "id": 2
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000159_26-fresho-potato.jpg",
+      "title": "Potato",
+      "price": "25 rs/kg",
+      "category": "Vegetables",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Hoovu Fresh",
+      "seasonal": "Summer Fruits",
+      "country": "India",
+      "quantity": 0,
+      "id": 3
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000200_17-fresho-tomato-hybrid.jpg",
       "title": "Tomato-Hybrid",
-      "price": "",
+      "price": "20 rs/kg",
       "category": "Vegetables",
       "description": "Purchase more than 5kg to get a discount of 5%.",
       "brand": "Fresho",
@@ -36,6 +71,42 @@
       "country": "Australia",
       "quantity": 0,
       "id": 5
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+      "title": "Cauliflower",
+      "price": "15 rs/kg",
+      "category": "Vegetables",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Fresho",
+      "seasonal": "Summer Fruits",
+      "country": "China",
+      "quantity": 0,
+      "id": 6
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/40218332_1-fresho-grapes-green.jpg",
+      "title": "Grapes",
+      "price": "35 rs/kg",
+      "category": "Fruits",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Organic",
+      "seasonal": "Winter Fruits",
+      "country": "India",
+      "quantity": 0,
+      "id": 7
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
+      "title": "Green Peas",
+      "price": "23 rs/kg",
+      "category": "Vegetables",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Hoovu Fresh",
+      "seasonal": "Winter Fruits",
+      "country": "Australia",
+      "quantity": 0,
+      "id": 8
     },
     {
       "image": "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
@@ -324,6 +395,18 @@
       "country": "Australia",
       "quantity": 0,
       "id": 32
+    },
+    {
+      "image": "https://www.bigbasket.com/media/uploads/p/mm/10000592_10-fresho-sugarcane.jpg",
+      "title": "Sugar Cane",
+      "price": "36 rs/kg",
+      "category": "Fruits",
+      "description": "Purchase more than 5kg to get a discount of 5%.",
+      "brand": "Fresho",
+      "seasonal": "Winter Fruits",
+      "country": "India",
+      "quantity": 0,
+      "id": 33
     }
   ],
   "register": [
@@ -340,6 +423,13 @@
       "email": "rahul@gmail.com",
       "password": "12345",
       "id": 2
+    },
+    {
+      "firstName": "Parmeshwar",
+      "lastName": {},
+      "email": "murmuparmeshwar05@gmail.com",
+      "password": "999999",
+      "id": 3
     }
   ],
   "admin": [
@@ -348,19 +438,20 @@
       "password": 12345
     }
   ],
-  "supplements": [],
-  "household": [
+  "supplements": [
     {
-      "image": "https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/6cf6d3c9-a568-4a3c-8ec2-6476ddcebad1/041af9db-5f22-4e5a-8da6-f9d5b5c3ec73/hp_cleaners-disfec_cleaningStorefront_m_480_250123_01.jpg",
-      "title": "Disinfectant Toilet Cleaner Liquid, Original",
-      "price": "99",
-      "category": "Cleaners & Disinfectants",
+      "image": "https://www.bigbasket.com/media/uploads/p/s/40019371_27-bournvita-chocolate-health-drink-bournvita.jpg",
+      "title": "Born Vita",
+      "price": "299",
+      "category": "Beverages",
       "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Harpic",
+      "brand": "Bron Vita",
       "country": "India",
       "quantity": 0,
       "id": 1
-    },
+    }
+  ],
+  "household": [
     {
       "image": "https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/6cf6d3c9-a568-4a3c-8ec2-6476ddcebad1/041af9db-5f22-4e5a-8da6-f9d5b5c3ec73/hp_cleaners-disfec_cleaningStorefront_m_480_250123_01.jpg",
       "title": "Disinfectant Toilet Cleaner Liquid, Original",
