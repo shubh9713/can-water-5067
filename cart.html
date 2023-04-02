@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Navbar Props -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/db1cefd446.js" crossorigin="anonymous"></script>
+    <!-- Lato Fonts impoting -->
+    <!-- Roboto Slab Importing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./cart.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div id="navbar"></div>
+        <!-- NAVBAR ENDS here -->
+    </div>
+    <!-- Heading + item count -->
+    <div id="itemCount">
+        <h3>Your Basket( <span id="cartLen1">0</span> items)</h3>
+        <hr />
+    </div>
+    <!-- Cart Table -->
+    <div id="cartTable">
+        <table>
+            <thead>
+                <tr>
+                    <th id="th1">ITEM NAME</th>
+                    <th id="th2">UNIT PRICE</th>
+                    <th id="th3">QUANTITY</th>
+                    <th id="th4">SUBTOTAL</th>
+                    <th id="th5">DELETE</th>
+                </tr>
+            </thead>
+            <!-- TD Dummy Entries Starts  -->
+            <tbody></tbody>
+        </table>
+        <hr />
+        <!-- Cart Table END-->
+        <!-- EMPTY BASKET BUTTON - OFFER & SUBTOTAL -->
+        <div id="checkOutDiv">
+            <div id="emptyBtnDiv">
+                <div>
+                    <button id="emptyBasketBtn">
+                        <i class="fas fa-shopping-basket"></i> EMPTY BASKET
+                    </button>
+                </div>
+                <div>
+                    <button id="continueShopBtn">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div id="offerDiv">
+                <div>
+                    <h4>Offer on Natural Organic Khapli Atta</h4>
+                    <p>
+                        Buy Natural Organic Khapli Atta, 5 kg and get Natural...
+                    </p>
+                </div>
+            </div>
+            <div id="totalDiv">
+                <div>
+                    <div id="piggySub">
+                        <div id="subTotalDiv">
+                            <div>
+                                <p>Subtotal</p>
+                                <!-- SUBTOTAL DYNAMIC -->
+                                <p>Rs. <span id="subTotalSum" value="0">0.00</span></p>
+                            </div>
+                            <div>
+                                <p>Total Discount</p>
+                                <p>Rs. <span id="subTotalDis">0.00</span></p>
+                            </div>
+                            <hr />
+                            <div>
+                                <!-- Dynamic Total -->
+                                <h1>TOTAL</h1>
+                                <h1>Rs.<span id="grandTotal1" value="0"> 0.00</span></h1>
+                            </div>
+                        </div>
+                        <div id="piggyIconDiv">
+                            <div id="piggy"><i class="fas fa-piggy-bank"></i></div>
+                            <!-- Total Saved Amt Dynamic -->
+                            <p>You Saved Rs. <span id="savedMoney"> 0.00</span></p>
+                        </div>
+                    </div>
+                    <!-- Dynamic Price -->
+                    <div id="checkOutBtnDiv">
+                        <p>
+                            *For this order: Accepted food coupon is Rs.<span id="grandTotal2">
+                                0.00</span>
+                        </p>
+                        <hr />
+                        <div>
+                            <button id="checkoutBtn">CHECKOUT</button>
+                        </div>
+                        <p>**Actual delivery charges computed at checkout time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Ends Here -->
+        <hr style="
+            height: 20px;
+            background-color: #f3f3f3;
+            border: 1px solid #f3f3f3;
+          " />
+        <hr style="
+            height: 20px;
+            background-color: #f3f3f3;
+            border: 1px solid #f3f3f3;
+          ">
+    </div>
+    <!-- FOOTER Starts here -->
+    <div id="footer">
+        <div id="footer1">
+            <h3>bigbasket</h3>
+            <p>About Us</p>
+            <p>In News</p>
+            <p>Green bigbasket</p>
+            <p>Privacy Policy</p>
+            <p>Affiliate</p>
+            <p>Terms and Conditions</p>
+            <p>Careers At bigbasket</p>
+            <p>bb Instant</p>
+            <p>bb Daily</p>
+            <p>bb Blog</p>
+        </div>
+        <div id="footer2">
+            <h3>Help</h3>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+            <p>bb Wallet FAQs</p>
+            <p>bb Wallet T&Cs</p>
+            <p>Affiliate</p>
+            <p>Vendor Connect</p>
+            <p>E-Invoice Compliance for bigbasket Vendors</p>
+        </div>
+        <div id="footer3">
+            <h3 style="margin-bottom: 30px">Download App</h3>
+            <img src="https://www.bbassets.com/static/v2476/uiv2/images/Google-App-store-icon.png" alt="googleBigBasket"
+                style="width: 60%; object-fit: contain" />
+            <br />
+            <br />
+            <img src="https://www.bbassets.com/static/v2476/uiv2/images/Apple-App-store-icon.png" alt="AppleBigBasket"
+                style="width: 60%; object-fit: contain" />
+        </div>
+        <div id="footer4">
+            <h3>Get Social With Us</h3>
+            <div>
+                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="fb-link"
+                    style="width: 45px" />
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="pinterest" style="width: 45px" />
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                    alt="twitterIcon" style="width: 45px" />
+                <img src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-suzem-limited-make-known-20.png"
+                    alt="InstaIcon" style="width: 45px" />
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER Ends here -->
+    </div>
+    <!-- Container Ends here -->
+    </div>
+</body>
+<script src="./cart.js"></script>
+
+</html>
+<!-- <script type="module"> 
+  import {navbar,footer} from "./components/index.js"
+    
+    let nav_div = document.getElementById("navbar")
+    nav_div.innerHTML = navbar();
+  
+    let footer_div = document.getElementById("footer")
+    footer_div.innerHTML = footer();
+  </script> -->
