@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Document</title>
         <!-- <link rel="stylesheet" href="product.css"> -->
-
+        <link rel="stylesheet" href="index.css">
+   
 </head>
 <style>
 
@@ -188,14 +188,102 @@ padding: 7%;
         background-color: green;
         color: white;
     }
+    @media only screen and (max-width:760px) {
+       #dfil {
+            display: none;
+           
+        }
+        #products{
+            width:100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr)
+        }
+        .dmain{
+            height:530px
+        }
+        #menu-wrapper{
+    display: none;
+        }
+        #menu {
+    display: none;
+  }
+  #hamburger-icon {
+    display: flex;
+  }
+  #menu-wrapper.is-open #menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  #menu-wrapper.is-open #menu li {
+    margin: 10px 0;
+  }
 
-
-       /* Navbar Below */
-.navbar{
-    margin-bottom: 50px;
+    }
+    
+#menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+#menu {
+  display: none
+}
+#menu li {
+  margin-right: 10px;
+}
+#menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+#menu a:hover {
+  background-color: #ccc;
 }
 
-    .topnav{
+/* Hamburger icon styles */
+#hamburger-icon {
+  
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+#hamburger-icon div {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+#hamburger-icon:hover div {
+  background-color: #aaa;
+}
+
+/* Media query to show/hide menu and hamburger icon */
+@media (min-width: 768px) {
+ 
+
+}
+#menu-wrapper{
+    background-color: green;
+    margin-bottom: 10px;
+}
+#hamburger-icon{
+    color: green;
+}
+.topnav{
         display: none;
     }
     body {margin:0;font-family:Arial}
@@ -317,12 +405,18 @@ padding: 7%;
     display: none;
   }
 }
-   
+
+#click1a,#click2a,#click3a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+
+}
+
     </style>
     <!-- <style src="product.css></style> -->
 
     <body>
-
         <div class="loginSignup">
         
             <div>
@@ -330,31 +424,27 @@ padding: 7%;
                 <span class="glyphicon glyphicon-user"></span>
                 <a href="login.html">Login</a>
                 <a href="login.html">Sign Up</a>
-                <a href="./AdminSide/login.html">Admin</a>
             </div>
             
             <div><span class="glyphicon glyphicon-earphone"></span>9934524961</div>
             <!-- <div id="slideShowoffer"> -->
                     <!-- <h1 id="slideShowoffer"></h1> -->
             <!-- </div> -->
-            <!-- slideshow -->
         </div>
         <!-- Navbar -->
     
         <div class="navbar">
             <div>
-      <a href="./index.html" class="logo"><img src="./Images/th.jpg" alt=""></a>
-      <!-- <a href="#news">News</a> -->
-      <!-- <a href="#news">News</a> -->
+      <a href="#home" class="logo"><img src="./Images/th.jpg" alt=""></a>
       <!-- <a href="#news">News</a> -->
       <div class="dropdown">
         <button class="dropbtn">Shop By Category
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="./product.html">Fruits & Vegetables</a>
-          <a href="./product.html">Foodgrains, Oil & Masala</a>
-          <a href="./product.html">Bakery, Cakes & Dairy</a>
+          <a href="#">Fruits & Vegetables</a>
+          <a href="#">Foodgrains, Oil & Masala</a>
+          <a href="#">Bakery, Cakes & Dairy</a>
           <a href="#">Beverages</a>
           <a href="#">Snacks & Branded Foods</a>
           <a href="#">Beauty & Hygiene</a>
@@ -392,8 +482,6 @@ padding: 7%;
     
     
       <!-- 2ND NAVBAR -->
-      <!-- 2ND NAVBAR -->
-      <!-- 2ND NAVBAR -->
       <div class="topnav" id="myTopnav">
         <!-- <a href="#home" class="active">Home</a> -->
         <!-- <a href="#news">News</a> -->
@@ -419,7 +507,22 @@ padding: 7%;
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
 
-   
+        <!-- ////////////////////////////// -->
+        <div id="menu-wrapper">
+            <div id="hamburger-icon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <nav id="menu">
+              <ul>
+                <li><a id ="click1" href="#">Organic Fruits</a></li>
+                <li><a id="click2" href="#">Organic Vegetables</a></li>
+                <li><a id="click3" href="#">Supplements</a></li>
+               
+              </ul>
+            </nav>
+          </div>
 
   
   <div id ="dfilter">
@@ -431,7 +534,7 @@ padding: 7%;
             <nav>
                 <ul>
                   <li class="dropdown">
-                    <a id ="click1" href="#">Organic Fruits</a>
+                    <b><a id ="click1a" href="#">Organic Fruits</a></b>
                     <ul class="dropdown-menu">
                       <li><a id="p1" href="#">Low - High</a></li>
                       <li><a id="p2" href="#">High - Low</a></li>
@@ -439,7 +542,7 @@ padding: 7%;
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a id="click2" href="#">Organic Vegetables</a>
+                   <b><a id="click2a" href="#">Organic Vegetables</a></b> 
                     <ul class="dropdown-menu">
                       <li><a id="p3" href="#">Low - High</a></li>
                       <li><a id="p4"href="#">High - Low</a></li>
@@ -447,7 +550,7 @@ padding: 7%;
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a id="click3"href="#">Supplements</a>
+                    <b><a id="click3a"href="#">Supplements</a></b>
                     <ul class="dropdown-menu">
                       <li><a id="p5" href="#">Low - High</a></li>
                       <li><a id="p6" href="#">High - Low</a></li>
@@ -480,8 +583,7 @@ padding: 7%;
 </div>  
 </body>
 </html>
-<!-- <script src="product.js"></script> -->
-<script src="index.js"></script>
+<script src="product.js"></script>
 <script>
 
 
@@ -505,6 +607,24 @@ padding: 7%;
        
     })
 
+    let category1a=document.getElementById("click1a")
+    category1a.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Fruits"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
 
 //vegetables addeventlistener
 
@@ -528,6 +648,24 @@ let category2=document.getElementById("click2")
        
     })
 
+    let category2a=document.getElementById("click2a")
+    category2a.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Vegetables"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
 //supplements
 
 let category3=document.getElementById("click3")
@@ -549,6 +687,24 @@ let category3=document.getElementById("click3")
        
     })
 
+    let category3a=document.getElementById("click3a")
+    category3a.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?category=Supplements"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+    })
     // <li><a id="p1" href="#">Low - High</a></li>
     let fpl=document.getElementById("p1")
     fpl.addEventListener("click",(e)=>{
@@ -754,14 +910,22 @@ let category7=document.getElementById("click7")
                 offer.innerText="GET 24% OFF"
                 offer.classList.add("offer")
 
-                let anchor = document.createElement("a");
-                anchor.setAttribute("href", "./Individual_Product.html");
-
                 let image=document.createElement("img")
                 image.setAttribute("src",item.image)
                 image.classList.add("image")
 
-                anchor.append(image)
+                let anchortag=document.createElement("a")
+                anchortag.setAttribute("href","Individual_Product.html")
+
+                anchortag.append(image)
+
+                anchortag.addEventListener("click",()=>{
+
+                    localStorage.setItem("itemid",item.id);
+
+                })
+
+
 
                 let fresho=document.createElement("p")
                 fresho.innerText=item.brand
@@ -799,7 +963,7 @@ let category7=document.getElementById("click7")
 
                 let carimg=document.createElement("img")
                 carimg.classList.add("carimg")
-                carimg.src="car.png"
+                carimg.src="images/car.png"
 
                 let delivery2=document.createElement("div")
                 delivery2.classList.add("delivery2")
@@ -827,10 +991,14 @@ let category7=document.getElementById("click7")
                 delivery1.append(carimg)
                 delivery.append(delivery1,delivery2,)
                     
-          main.append(offer, anchor,fresho,title,select,main2)
+          main.append(offer,anchortag,fresho,title,select,main2)
 
                 main2.append(mrp,delivery,delivery3)
                 container.append(main)
             });
         }
+        document.querySelector('#hamburger-icon').addEventListener('click', function() {
+    document.querySelector('#menu-wrapper').classList.toggle('is-open');
+  });
 </script>
+<script src="./index.js"></script>
