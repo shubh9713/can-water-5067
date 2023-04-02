@@ -23,35 +23,40 @@ function DisplayMoreInfo() {
 
 // product Detailes
 let A_ProductNum = document.getElementById("A_ProductNum");
-
-let id = 1;
-
-featchAndRender(id);
-function featchAndRender(id) {
-    fetch(`http://localhost:3000/grocery/${id}`)
-    .then((res) => {
-        return res.json();
+ 
+let ItId = localStorage.getItem("itemid");
+//  console.log(typeof(ItId));
+render(ItId)
+function render(hi){
+   
+    let apiurl=`http://localhost:3000/grocery/${hi}`
+    fetch(apiurl)
+    .then((response)=>{
+        return response.json()
     })
-    .then((data) => {
-        console.log(data);
-        Display(data);
+    .then((data)=>{
+    //    console.log(data)
+       Display(data)
+    })
+    .catch((err)=>{
+        console.log(err)
     })
 }
 
 
 let Lsdata = JSON.parse(localStorage.getItem("BasketProducts")) || [];
-function Display(data) 
-{
+function Display(data) {
+
     
     let A_Category = document.getElementById("A_Category");
 
-     let P1 = document.createElement("p");
+     let P1 = document.createElement("h4");
      P1.innerText = data.category;
     
-     let P2 = document.createElement("p");
+     let P2 = document.createElement("h4");
      P2.innerText = `Children `
 
-     let P3 = document.createElement("p");
+     let P3 = document.createElement("h4");
      P3.innerText = `Men & Women`;
 
     A_Category.append(P1,P2,P3)
@@ -59,7 +64,7 @@ function Display(data)
 
     let A_Brands = document.getElementById("A_Brands");
 
-    let B = document.createElement("h5");
+    let B = document.createElement("h4");
 
     B.innerText = data.brand;
     A_Brands.append(B)
@@ -80,45 +85,52 @@ function Display(data)
 
     let ProductInfo = document.getElementById("ProductInfo");
     //console.log(data.title);
-    let name = document.createElement(`h3`)
+    let name = document.createElement(`h1`)
     name.innerText  = data.title;
 
-    let price = document.createElement("h5");
+    let price = document.createElement("h2");
     price.innerText =`MRP : ${data.price}`;
 
     let category = document.createElement("p");
     category.innerText = `category : ${data.category}`;
 
 
-    let brand = document.createElement("p");
+    let brand = document.createElement("h2");
     brand.innerText = `brand : ${data.brand}`;
 
 
-    let seasonal =document.createElement("p");
-    seasonal.innerText = `seasonal : ${data.seasonal}`;
+    let seasonal =document.createElement("h4");
+    seasonal.innerText = `Seasonal : ${data.seasonal}`;
 
-    let description = document.createElement("h5");
-    description.innerText = `description : ${data.description}`;
+    let description = document.createElement("h4");
+    description.innerText = `Offer : ${data.description}`;
 
-    let country = document.createElement("p");
-    country.innerText = `country : ${data.country}`;
+    let country = document.createElement("h4");
+    country.innerText = `Country : ${data.country}`;
 
 
-    let Rating  = document.createElement("p");
-    Rating.innerHTML = `4.2<img src="./Bornvita_images/star.png" alt=""> 1556 Ratings & 35 Reviews</p>`;
+    let Rating  = document.createElement("h4");
+    Rating.innerHTML = `4.2 <img src="./Bornvita_images/star.png" alt=""> 1556 Ratings & 35 Reviews</p>`;
 
+    let btdiv=document.createElement("div")
+    btdiv.classList.add("bts")
 
     let A_Remove_Product = document.createElement("button");
     A_Remove_Product.classList.add("A_Btn_design");
     A_Remove_Product.innerText = `-`;
+    A_Remove_Product.classList.add("bt")
+   
 
     let A_ProductNum = document.createElement("button");
     A_ProductNum.classList.add("A_Btn_design");
     A_ProductNum.innerText = data.quantity;
+    A_ProductNum.classList.add("bt")
+    
 
     let A_Add_Product = document.createElement("button");
     A_Add_Product.classList.add("A_Btn_design")
     A_Add_Product.innerText = "+";
+    A_Add_Product.classList.add("bt")
 
     let Addto_Basket = document.createElement("button");
     Addto_Basket.classList.add("A_Btn_design")
@@ -126,6 +138,7 @@ function Display(data)
     Addto_Basket.innerText = `ADD TO BASKET`
     Addto_Basket.style = "color : black";
 
+    btdiv.append( A_Remove_Product,A_ProductNum,A_Add_Product, Addto_Basket)
 
     Addto_Basket.addEventListener("click",function(){
         let c= 0;
@@ -152,7 +165,7 @@ function Display(data)
     let DeliveryTime = document.createElement("p");
     DeliveryTime.innerHTML = `<img src="./Bornvita_images/DeliveryTimeIMG.png" alt="">Standard: Tomorrow 9:00AM - 1:30PM</p>`
 
-    ProductInfo.append(name,price,seasonal,description,Rating,A_Remove_Product,A_ProductNum,A_Add_Product,Addto_Basket,SaveBth);
+    ProductInfo.append(name,price,seasonal,description,Rating,btdiv);
 
 
 
@@ -169,6 +182,125 @@ function Display(data)
         data.quantity = data.quantity + 1;
         A_ProductNum.innerText = data.quantity;
     })
+    localStorage.removeItem("itemid")
 }
 
 
+
+
+        let container=document.getElementById("products")
+        let apiurl="http://localhost:3000/grocery?_page=1&_limit=8"
+        fetch(apiurl)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+           display(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+       
+        function display(data){
+            container.innerHTML=null
+            data.forEach((item) => {
+
+                let id=document.createElement("div")
+                id.setAttribute("id",item.id)
+
+                let main=document.createElement("div")
+                main.classList.add("dmain")
+                let main2=document.createElement("div")
+                main2.classList.add("dmain2")
+
+                let offer=document.createElement("h4")
+                offer.innerText="GET 24% OFF"
+                offer.classList.add("offer")
+
+                let image1=document.createElement("img")
+                image1.setAttribute("src",item.image)
+                image1.classList.add("image")
+
+                let anchortag=document.createElement("a")
+                anchortag.setAttribute("href","Individual_Product.html")
+
+                anchortag.append(image1)
+
+              
+
+
+
+                let fresho=document.createElement("p")
+                fresho.innerText=item.brand
+                fresho.classList.add("fresho")
+
+                let title=document.createElement("h3")
+                title.innerText=item.title
+                title.classList.add("title")
+
+               
+
+                let select=document.createElement("select")
+                let option1=document.createElement("option")
+                option1.innerHTML=`500g-Rs${(Math.ceil(item.price.trim().split(" ").map(Number)[0]/2))}`
+                let option2=document.createElement("option")
+                option2.innerText=`1kg-Rs${item.price.trim().split(" ").map(Number)[0]}`
+                let option3=document.createElement("option")
+                option3.innerText=`2kg-Rs${item.price.trim().split(" ").map(Number)[0]*2}`
+                select.append(option1,option2,option3)
+                
+                let mrp=document.createElement("p")
+                mrp.innerHTML=`<b>Price-  ${item.price}<b>`
+                mrp.classList.add("mrp")
+               
+                let car=document.createElement("div")
+                car.classList.add("car")
+              
+
+                let delivery=document.createElement("div")
+                delivery.classList.add("delivery")
+
+
+                let delivery1=document.createElement("div")
+                delivery1.classList.add("delivery1")
+
+                let carimg=document.createElement("img")
+                carimg.classList.add("carimg")
+                carimg.src="images/car.png"
+
+                let delivery2=document.createElement("div")
+                delivery2.classList.add("delivery2")
+
+                let del=document.createElement("p")
+                del.innerText=`Standard Delivery 30Mar,9:00AM-1:30PM`
+                del.classList.add("del")
+                
+                let delivery3=document.createElement("div")
+                delivery3.classList.add("delivery3")
+
+                let qty=document.createElement("h3")
+                qty.innerText="Qty"  
+                qty.classList.add("qty")  
+                
+                let qinput=document.createElement("input")
+                qinput.setAttribute("type","number") 
+                qinput.classList.add("qinput")
+                let btn1=document.createElement("button")
+                btn1.classList.add("btn1")
+                btn1.innerText="ADD"
+
+                    delivery3.append(qty,qinput,btn1)
+                delivery2.append(del)
+                delivery1.append(carimg)
+                delivery.append(delivery1,delivery2,)
+                    
+          main.append(offer,anchortag,fresho,title,select,main2)
+
+                main2.append(mrp,delivery,delivery3)
+                container.append(main)
+            });
+        }
+        document.querySelector('#hamburger-icon').addEventListener('click', function() {
+    document.querySelector('#menu-wrapper').classList.toggle('is-open');
+  });
