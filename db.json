@@ -1,18 +1,6 @@
 {
   "grocery": [
     {
-      "image": "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
-      "title": "onion(Loose)",
-      "price": "1 rs/kg",
-      "category": "Vegetables",
-      "description": "Purchase more than 5kg to get a discount of 5%.",
-      "brand": "Fresho",
-      "seasonal": "Summer Fruits",
-      "country": "China",
-      "quantity": 0,
-      "id": 1
-    },
-    {
       "image": "https://www.bigbasket.com/media/uploads/p/s/1221868_1-fresho-tender-coconut.jpg",
       "title": "Tender Coconut",
       "price": "35 rs/kg",
@@ -407,24 +395,21 @@
       "country": "India",
       "quantity": 0,
       "id": 33
-    }
-  ],
-  "register": [
-    {
-      "id": 1,
-      "firstName": "Parmeshwar",
-      "lastName": "Murmu",
-      "email": "murmu@gmail.com",
-      "password": "12345"
     },
     {
-      "firstName": "Rahulr",
-      "lastName": "Yadav",
-      "email": "rahul@gmail.com",
-      "password": "12345",
-      "id": 2
+      "image": "https://www.bigbasket.com/media/uploads/p/s/10000159_26-fresho-potato.jpg",
+      "title": "vbn",
+      "price": "23",
+      "category": "Fruits",
+      "description": "fgfdgdf",
+      "brand": "abc",
+      "seasonal": "msdfdf",
+      "country": "india",
+      "quantity": "33",
+      "id": 34
     }
   ],
+  "register": [],
   "admin": [
     {
       "email": "admin@123",
