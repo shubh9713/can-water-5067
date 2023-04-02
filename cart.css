@@ -1,5 +1,18 @@
+.deletec{
+  background-color: rgb(193, 51, 51);
+  border: none;
+
+  margin-top: 60px;
+  margin: auto;
+  display: block;
+  width:120px;
+  height: 40px;
+}
+
+
+
 table,
-/* shubham */
+
 th,
 td {
   border: 0.5px solid black;
