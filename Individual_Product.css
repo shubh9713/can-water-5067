@@ -1,124 +1,397 @@
-/* Individual Product Page */
+.topnav{
+    display: none;
+}
+body {margin:0;font-family:Arial}
 
-#A_PageDiv {
-    width: 80%;
-    align-content: center;
-    padding-left: 12%;
+.topnav {
+overflow: hidden;
+background-color: green;
 }
-#A_Path{
-    font-size: 60%;
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
-#A_Category > a ,#A_Brands > a{
-    display: block;
-    text-decoration: none;
-    color: rgb(88, 75, 75);
+
+.active {
+/* background-color: #04AA6D; */
+color: white;
 }
-#A_ProductPageDiv {
-    width: 100%;
+
+.topnav .icon {
+display: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 17px;    
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+background-color: #555;
+color: white;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+} 
+
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child), .dropdown .dropbtn {
+/* display: none; */
+}
+.topnav a.icon {
+float: right;
+display: block;
+}
+}
+
+@media screen and (max-width: 1608px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+display: block;
+width: 100%;
+text-align: left;
+}
+
+.topnav{
+display: block;
+}
+
+.navbar{
+display: none;
+}
+}
+#A_ProductPageDiv{
+    /* border: 1px solid red; */
+  
+    justify-content: space-between;
     display: flex;
-    background-color: rgb(226, 216, 216);
+    width:95%;
+    margin:auto;
+    margin-top: 45px;
+    height:100%
 }
 #A_Category1{
-    margin-left: 10%;
-    padding-top: 2%;
-    width: 25%;
+    background-color: green;
+    width: 20%;
+    text-align: center;
+    border-radius: 15px;
+    height:300px;
+    color:white
+
 }
-#A_imageOfProduct > img{
-    width: 150%;
-    padding-bottom: 20%;
+
+#A_imageOfProduct{
+    width:35%;
+    /* border:1px solid brown; */
+    /* position:absolute */
+
 }
+#A_Brands{
+    margin: 0%;
+    padding: 0%;
+}
+
 #ProductInfo{
-    margin-left: 30%;
-    padding-top: 8%;
-    width: 100%;
-}
-#A_ProductRate {
-    display: grid;
-    grid-template-columns: repeat(2);
-}
-#A_ProductRate > div {
 
-    border:  1px solid rgb(88, 75, 75);
-    background-color: rgb(220, 230, 230);
-}
-.Select_Size{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.Select_Size > div > img{
-    height: 100%;
-}
-#A_PackSize > div {
+background-color: green;
+color:white;
+height: 100%;
+border-radius: 85px;
 
-    text-align: center;
-    align-items: center;
-}
-#A_Reating_Reviews{
-    display: grid;
-    grid-template-columns: 40% 60%;
 
 }
-#A_Reating_Reviews div > img {
-    border: solid 1px brown;
+#ProductInfo h2{
+margin-top: 65px;
+margin-left: 20px;
+
 }
-#A_Know_More{
-    width: 100%;
-    align-items: center;
-    text-align: center;
+#ProductInfo h4{
+margin-top: 15px;
+margin-left: 20px;
+
 }
-.A_Bournvita_Images{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-#A_Imageset{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    gap: 3%;
-}
-.A_Btn_design{
-    margin-left: 2%;
-    color: red;
-    background-color :rgb(86, 167, 92);
-    border: none ;
+#ProductInfo button{
+height:45px;
+border: none;
+margin: 5px 5px 5px 5px;
+
 }
 #A_Product_img{
-    width: 100%;
-    padding-top: 35%;
+width:100%;
+margin: auto;
+justify-content: center;
+border-radius: 90px;
+/* padding-left: 80px; */
+
+
+}
+#ProductInfo h1{
+font-size: 50px;
+margin: 0%;
+padding: 0%;
+text-align: center;
+}
+.bt{
+width:35px;
+display: inline-block;
+margin-bottom: 100px;
+}
+.bts{
+margin-left: 88px;
+margin-top: 80px;
+/* background-color: green; */
 }
 #A_bottom{
-    background-color: rgb(137, 192, 137);
+width:97%;
+margin:auto ;
+}
+#rating{
+margin:auto;
+width:97%
+}
+#A_Bottom_Heading{
+margin: 0%;
+padding: 0%;
+font-size: 34px;
+
+}
+#aboutse{
+margin: 0%;
+padding: 0%;
+font-size: 25px;
 }
 
-/* footer */
+#products>div{
+    width:95%;
+   
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 85px;
+      padding: 10px;
 
-#A_Main_Id {
-    width: 100%;
-    align-content: center;
-    text-align: justify;
+
 }
-
-#A_Bottom_Flex {
-    width: 100%;
+#products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width:85%;
+    margin-left: 25px;
+    column-gap: 5%;
+    margin: auto;
+}
+#dfilter{
     display: flex;
-    justify-content: space-between;
+    width:95%;
+    /* border:1px solid red; */
+    margin:auto;
 }
-#A_Bottom_Flex > div{
-    width: 100%;
+#dfil{
+    width:20%;
+   padding: 0px;
+    box-shadow: rgba(77, 75, 75, 0.24) 0px 3px 8px;
+    height:550px
 }
-.A_bottom_Table{
+.offer{
+    margin:0px;
+    text-align: end;
+    box-shadow: rgba(77, 75, 75, 0.24) 0px 3px 8px;
+    color: red;
+    
+}
+.image{
+    width:100%
+}
+.fresho{
+    margin:0px;
+    font-size: 13px;
+    color:grey
+}
+.title{
+    margin:5px 0px 10px 0px
+}
+.mrp{
+    font-size: 16px;
+    margin :5px 0px 2px 0px;
+
+
+    
+}
+select{
+    width:100%;
+    justify-content: center;
+    border: 1px solid grey;
+    
+}
+
+.dmain2{
+ 
+    background-color: rgba(238, 237, 237, 0.759);
+    border-radius: 5px;
+    height:100px;
+    margin:0px;
+    padding:0px
+}
+.car{
+    width:15%;
+   
+    margin: 0px;
+
+}
+.carimg{
+    width:100%
+}
+.delivery{
     display: flex;
-    justify-content: space-between;
+    width:100%
 }
-.A_bottom_Table > h5{
-    width: 20%;
+.delivery1{
+    width:30%
 }
-.A_bottom_Table > p{
-    width: 80%;
+.del{
+    font-size: 11px;
+    margin :2px 0px 0px 0px
 }
-.A_bottom_Table > img{
+.qinput{
+    width:30%;
+    border-radius: 10px;
+}
+.btn1{
+   
+    background-color: rgb(28, 205, 34);
+    border:none;
+    width:35%;
+    border-radius:10px;
+}
+.delivery3{
+    margin-top: 10px;
+    display: flex;
     width: 100%;
-  margin-right: 20%;
+    height:30px;
+    justify-content: space-between;      
+}
+.qty{
+    width:20%;
+    margin: 4px 0px 0px 0px
+}
+
+#cate h1{
+    font-size: 25px;
+    text-align: center;
+   
+    
+}
+#cate1 h3{
+    justify-content: space-around;
+    color:black;
+    text-decoration: none;
+    margin-top: 2px;
+}
+#cate1 h3 a{
+    text-decoration: none;
+    color:black
+
+}
+#cate{
+    background-color:rgb(28, 205, 34);
+    height:45px;
+    margin-bottom:10px;
+   
+
+}
+#cate{
+    text-decoration: none;
+    color: black;
+}
+#cate1{
+    height:6%
+}
+#dfil{
+    display: flex;
+    flex-direction: column;
+}
+#click1,#click2,#click3{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+#click1:hover,#click2:hover,#click3:hover{
+    background-color: green;
+    color: white;
+}
+#p1,#p2,#p3,#p4,#p5,#p6{
+text-decoration: none;
+color: green;
+}
+#p1:hover,#p2:hover,#p3:hover,#p4:hover,#p5:hover,#p6:hover{
+background-color: green;
+    color: white;
+}
+#cate5{
+padding: 0px;
+margin: 0px;
+}
+#cate1{
+text-align: center;
+padding: 7%;
 }
