@@ -1,1 +1,1 @@
-GET http://localhost:3000/grocery
+GET http://localhost:3000/grocery?_limit=6&_page=2

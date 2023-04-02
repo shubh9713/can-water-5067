@@ -10,65 +10,68 @@
     
 </head>
 <body>
+  <div id="totalitemsDiv">
+    <h1>Total ITems:- <span id="totalitems">0</span></h1>
+    <button id="addBtn">ADD PRODUCTS</button>
+    <div id="pagination">
 
-  <div id="parent">
+    </div>
+  </div>
 
+  <div id="container">
 
-
-      
-        <div id="addParent">
+         <div id="productDiv">
+        <div>
           <div id="product" >
             <input type="text" id="image" placeholder="enter image url">
             <input type="text" id="brand" placeholder="enter product Brand">
             <input type="text" id="title" placeholder="enter Title">
             <input type="text" id="price" placeholder="enter price ">
             <input type="text" id="category" placeholder="enter category ">
+            <input type="text" id="seasonal" placeholder="Seasonal ">
+            <input type="text" id="quantity" placeholder="Quantity">
             <input type="text" id="description" placeholder="description ">
             <input type="text" id="country" placeholder="country ">
           </div>
           <button id="addProducts">Add Product</button>
         </div>
 
-<!-- ///////////////////////////////////////////// -->
-
-<div id="addParent">
-  <div id="product" >
-
-    <input type="text" id="updateimg" placeholder="enter image url">
-  
-    <input type="text" id="updateprice" placeholder="enter price ">
-
-    
-    
-  </div>
-  <button id="updateProducts">Update Product</button>
-</div>
-
+<div id="updateProduct">
+  <input type="text" placeholder="Enter Product Image" id="productImage">
+  <input type="text" placeholder="Price" id="productPrice">
+  <button id="updatProductBtn">Update Product</button>
 
 </div>
+</div>
+
 
 
        <div id="data">
         <table>
-            <tr>
-            <thead>
-                <th>Image</th>
-                <th>Brand</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Category</th>
-                <th>description</th>
-                <th>country</th>
-                <th>Remove</th>
-                <th>Edit</th>
-              </thead>
-            </tr>
-            <tbody>
-                <!-- append the data here -->
-            </tbody>
-        </table>
+          <thead>
+              <tr>
+                  <th>IMAGE</th>
+                  <th>TITLE</TITLE></th>
+                  <th>BRAND</th>
+                  <th>PRICE</th>
+                  <th>CATEGORY</th>
+                  <th>DESCRIPTION</th>
+                  <th>COUNTRY</th>
+                  <th>DELETE</th>
+                  <th>EDIT</th>
+              </tr>
+
+          </thead>
+          <tbody>
+              <!-- table data -->
+              
+
+          </tbody>
     </div>
-    
+  </div>
+
+
+  
 </body>
 </html>
 <script src="main.js"></script>

@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
    
   }
 
