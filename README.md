@@ -23,7 +23,8 @@
 
 # Footer Section
 
-![Footer Section](https://user-images.githubusercontent.com/121368970/228915162-bd32dc70-4b59-4178-a0d6-046e8e8d671c.png)
+![footer](https://user-images.githubusercontent.com/121368970/229432597-6c2d6d20-602f-44c4-a8fb-f645b1ac75e5.png)
+
 
 
 
