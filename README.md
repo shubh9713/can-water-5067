@@ -18,6 +18,9 @@
 ![middle 2](https://user-images.githubusercontent.com/121368970/229432107-700acec6-2674-4a71-a270-a5a0afb290ca.png)
 
 
+# Product Page
+![product](https://user-images.githubusercontent.com/121368970/229433107-c1a62f90-acd7-41d5-a7ea-d7386e1c4103.png)
+
 
 
 
